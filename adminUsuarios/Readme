@@ -1,0 +1,5 @@
+mvn clean install
+lsof -i -P | grep -i listen
+kill -9 pid
+docker build -t sprint-prueba .
+docker run -it --rm --name servicio-spring -p 8080:8080 sprint-prueba
