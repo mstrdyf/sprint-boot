@@ -62,4 +62,8 @@ public class UsuarioWS {
 		return usuarioService.actualizar(usuario);
 	}
 	
+	@GetMapping("/prueba")
+	public String pruebaWS() {
+		return "ok";
+	}
 }
